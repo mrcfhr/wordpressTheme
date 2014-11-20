@@ -1,19 +1,13 @@
 <?php
 	if (function_exists('register_sidebar')) {
-		   /**
-			* Creates a sidebar
-			* @param string|array  Builds Sidebar based off of 'name' and 'id' values.
-			*/
-			$args = array(
-				'name'          => __( 'Sidebar Widgets' ),
-				'id'            => 'Sidebar Widgets',
-				'description'   => 'Widgets for the Sidebar',
-				'before_widget' => '<aside id="%1$s" class="widget &2$s">',
-				'after_widget'  => '</aside>',
-				'before_title'  => '<h3 class="widgettitle">',
-				'after_title'   => '</h3>'
-			);
-		
-			register_sidebar( $args );
-	}
+    	register_sidebar(array(
+    		'name' => 'Sidebar Widgets',
+    		'id'   => 'sidebar-widgets',
+    		'description'   => 'Widgets for the sidebar.',
+    		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+    		'after_widget'  => '</aside>',
+    		'before_title'  => '<h3>',
+    		'after_title'   => '</h3>'
+    	));
+    }
 ?>

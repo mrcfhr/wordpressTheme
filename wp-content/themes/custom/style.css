@@ -5,3 +5,73 @@ Description: My first custom Wordpress Theme built from Scratch
 Author: Marc Fehr
 Version: 1.00
 */
+
+* {
+	vertical-align: baseline;
+	font-weight: inherit;
+	font-family: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+body {
+	background: #ccc;
+}
+h1, h2, h3 {
+	font-weight: bold;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+}
+#outerWrapper {
+	margin: 0 auto;
+	width: 960px;
+	padding: 10px;
+	background-color: white
+}
+header {
+	border-bottom: 2px gray solid;
+	margin-bottom: 20px;
+}
+header h1 {
+	font-size: 2.5em;
+}
+nav.mainMenu {
+	padding: 5px;
+}
+nav.mainMenu ul li {
+	display: inline;
+	list-style: none;
+	margin-right: 20px;
+}
+#contentWrapper {
+	width: 100%;
+	overflow: auto;
+}
+#content {
+	width: 700px;
+	float: right;
+}
+#content article, #widget-area aside {
+	margin-bottom: 20px;
+}
+div.entry, div.entry p {
+	margin: 10px 0;
+}
+.widget-area {
+	width: 260px;
+}
+input#s {
+	width: 150px;
+}
+footer {
+	border-top: 2px gray solid;
+	font-size: .8em;
+	text-align: center;
+	padding: 10px;
+}
